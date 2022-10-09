@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<personal>
+    <cedula>1105082042</cedula>
+    <nombre_completo>Jean Paul Mosquera Arevalo</nombre_completo>
+    <edad>25</edad>
+    <celular>0978600824</celular> 
+    <email>jean.mosquera@unl.edu.ec</email>
+    <titulo>Ingeniero en Sistemas Informáticos y Computación</titulo>
+    <materia>Desarrollo de Software en Ambientes CLOUD</materia>
+    <programa>Maestria en Ingenieria de Software</programa> 
+    <universidad>Universidad Nacional de Loja</universidad>
+    <fecha_presentacion>08 de Octubre de 2022</fecha_presentacion>
+</personal>

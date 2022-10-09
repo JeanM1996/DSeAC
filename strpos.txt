@@ -1,0 +1,31 @@
+$navegador = $_SERVER['HTTP_USER_AGENT'];
+$statusCode = http_response_code();
+$sO = $_SERVER["HTTP_USER_AGENT"];
+$referer = $_SERVER['HTTP_REFERER'] ??"No referer url";
+$server = $_SERVER["SERVER_SIGNATURE"];
+$port =$_SERVER['SERVER_PORT'];
+
+echo ("<br> Navegador Completo:". ($navegador));
+function get_browser_name($navegador)
+{
+if (strpos($navegador, 'Opera')) return 'Opera';
+elseif (strpos($navegador, 'Edge')) return 'Edge';
+elseif (strpos($navegador, 'Chrome')) return 'Chrome';
+elseif (strpos($navegador, 'Safari')) return 'Safari';
+elseif (strpos($navegador, 'Firefox')) return 'Firefox';
+elseif (strpos($navegador, 'MSIE')) return 'Internet Explorer';
+return 'Other';
+}
+print ("Navegador Web utilizado:");
+echo (get_browser_name($navegador). "<br>");
+print (" Status code:");
+echo ($statusCode . "<br>");
+print ("Sistema Operativo:");
+echo ($sO . "<br>");
+print ("HTTP Referer:");
+echo ($referer. "<br>");
+print ("Servidor Web:");
+echo ($server. "<br>");
+print ("Numero de puerto:");
+echo($port."<br>");
+
